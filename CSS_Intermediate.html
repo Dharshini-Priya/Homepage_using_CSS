@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width"
+      initial-scale="1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+
+<title>Responsive</title>
+<style>
+*{
+    box-sizing: border-box;
+}
+.box{
+   padding-top:40px;
+  padding-left: 0px;
+  
+}
+.box2{
+
+   padding-top:30px;
+   padding-left: 100px;
+  
+}
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Jomhuria', cursive;
+}
+#layout{
+    
+    display:flex;
+    flex-wrap:wrap;
+}
+
+ul
+{
+list-style-type:none;
+}
+
+li
+{
+float:left;
+}
+
+li a
+{
+color:black;
+padding:20px 20px;
+font-size:40px;
+text-align:center;
+text-decoration:none;
+}
+
+#sidebar{
+    flex-basis:40%;
+    padding-left:200px;
+    padding-top: 0px;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+    background-color:white;
+    height:480px;
+    font-family: 'Freckle Face', cursive;
+}
+
+#content{
+    flex-basis:60%;
+    padding:20px;
+    border-bottom:1px solid white;
+    background-color:#fce6c2;
+    height:400px;
+    
+}
+
+@media (max-width:640px){
+    #sidebar, #content{
+        flex-basis:100%;
+        border-right:0;
+    }
+}
+
+@media (max-width:475px){
+    #sidebar{
+        display: none;
+    }
+}
+
+
+
+
+#content1{
+    flex-basis:60%;
+    padding:20px;
+    border-bottom:1px solid white;
+    background-color:#fce6c2;
+    height:400px;
+}
+
+@media (max-width:640px){
+    #content1{
+        flex-basis:100%;
+        border-right:0;
+        height:600px;
+    }
+}
+
+#sidebar1{
+    flex-basis:60%;
+    padding:30px;
+    background-color:white;
+    height:300px;
+    width:50%;
+}
+
+@media (max-width:640px){
+    #sidebar1{
+        flex-basis:100%;
+        border-right:0;
+    }
+}
+
+
+p{
+    font-size: 100px;
+}
+
+</style>
+</head>
+<body>
+<div id="layout">
+
+
+    <div id="sidebar">
+    <center><p> Elevate<p><center>
+    </div>
+
+    <div id="content">
+    
+   <ul>
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">COURSES</a></li>
+    <li><a href="#">PODCAST</a></li>
+    <li><a href="#">BLOG</a></li>
+    <li><a href="#">CONTACT</a></li>
+    </ul>
+    <br><br><br><br><br><br>
+    <div class="box">
+        <img src="G:\Udemy\Css_Complete\img1.jpg" width="300" height="300">
+    </div>
+
+    </div>
+    <br><br><br>
+    
+    
+</div>
+    <div id="content1">
+        <div class="box2">
+        <img src="G:\Udemy\Css_Complete\img2.jpg" width="300" height="400" style="border: 7px solid white;"
+        </div>
+    </div>
+</div>  
+
+
+
+</body>
+</html>
